@@ -1,0 +1,168 @@
+
+* {
+    font-family: 'Arial', sans-serif;
+    background: #1a1a1a;
+    color: #fff;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+    padding: 10px;
+  }
+  
+  nav > ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  nav a:hover {
+    background: #474747;
+  }
+
+  h1,h2,h3{
+    margin-top: 20px;
+    color:#f8f2f2;
+  }
+  
+  h3 + p {
+    border-top: 1px solid #f8f2f2;
+  }
+
+  h3 ~ p{
+    margin-top: 10px;
+  }
+
+  nav > ul{
+    background-color: #333;
+  }
+
+
+  img {
+    border: 3px solid #555;
+    padding: 10px;
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #wallpaper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  #wallpapers img {
+    width: calc(50% - 60px);
+    margin: 20px;
+    height: auto;
+    display: inline-block;
+  }
+  @media(max-width: 768px){
+    #wallpaper img{
+      width: calc(100% - 60px);
+      display: block;
+      margin: 20px auto;
+    }
+
+    uav ul{ 
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      display: none;
+    }
+    .menu-icon{
+      display: block;
+    }
+
+    .active-nav{
+      display: flex;
+    }
+  }
+
+  @media(max-width: 768px){
+    body{
+      font-size: 16px;
+    }
+    nav a, .button{
+      padding: 12px 20px;
+    }
+  }
+  
+  ul {
+    list-style-type: square;
+    padding: 0;
+  }
+  
+
+  ol {
+    list-style-type: decimal;
+    padding: 0;
+  }
+  
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table, th, td {
+    border: 2px solid #ddd;
+    padding: 10px;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+
+  
+
+  h1, h3 {
+    margin-top: 20px;
+  }
+  
+
+  nav > ul > li {
+    margin-right: 10px;
+  }
+  
+
+  h3 + p {
+    font-style: italic;
+  }
+  
+  h3 + ul {
+    margin-top: 0;
+  }
+  
+
+  a[target="-blank"]{
+    background-color: #444;
+    color: #ffffffff;
+  }
+  a[href^="http"] {
+    background-color: #444; 
+  }
+
+  
+
+  p::first-letter {
+    font-size: 130%;
+    color: #ff4081;
+  }
+
+  
